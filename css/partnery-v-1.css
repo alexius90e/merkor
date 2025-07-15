@@ -1,4 +1,17 @@
+.partnery-v-1__slider .swiper {
+  position: relative;
+  overflow: hidden;
+}
 .partnery-v-1__slider .swiper-button-prev, .partnery-v-1__slider .swiper-button-next {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 40px;
   height: 40px;
   border-radius: 62px;
@@ -6,11 +19,15 @@
   background-image: none;
 }
 .partnery-v-1__slider .swiper-button-prev::after, .partnery-v-1__slider .swiper-button-next::after {
-  font-size: 14px;
-  font-weight: 900;
-  color: #00b2e3;
-  -webkit-transition: color ease-out 0.2s;
-  transition: color ease-out 0.2s;
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../assets/images/npartners/prev-icon.svg) center/cover no-repeat;
+  -webkit-transition: -webkit-filter ease-out 0.1s;
+  transition: -webkit-filter ease-out 0.1s;
+  transition: filter ease-out 0.1s;
+  transition: filter ease-out 0.1s, -webkit-filter ease-out 0.1s;
 }
 .partnery-v-1__slider .swiper-button-prev:hover, .partnery-v-1__slider .swiper-button-next:hover {
   background-color: #01b0e3;
@@ -18,7 +35,12 @@
   transition: background-color ease-out 0.2s;
 }
 .partnery-v-1__slider .swiper-button-prev:hover::after, .partnery-v-1__slider .swiper-button-next:hover::after {
-  color: #ffffff;
+  -webkit-filter: brightness(0%) invert(100%);
+          filter: brightness(0%) invert(100%);
+}
+.partnery-v-1__slider .swiper-button-next::after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 .partnery-v-1__slider-slide-item {
   display: -webkit-box;

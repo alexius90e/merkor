@@ -4,19 +4,19 @@ partneryV1Els.forEach((partneryV1El) => {
   const swiperEl = partneryV1El.querySelector('.partnery-v-1__slider .swiper');
 
   const swiper = new Swiper(swiperEl, {
-    slidesPerView: 1,
+    slidesPerView: 4,
     spaceBetween: 0,
     breakpoints: {
-      320: {
+      576: {
         slidesPerView: 1,
       },
-      577: {
+      991: {
         slidesPerView: 2,
       },
-      992: {
+      1199: {
         slidesPerView: 3,
       },
-      1201: {
+      1920: {
         slidesPerView: 4,
       },
     },

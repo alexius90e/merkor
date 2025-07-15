@@ -14,6 +14,16 @@
             font-size: 14px;
             font-weight: 900;
             color: #00b2e3;
+            transition: color ease-out 0.2s;
+          }
+
+          &:hover {
+            background-color: #01b0e3;
+            transition: background-color ease-out 0.2s;
+          }
+
+          &:hover::after {
+            color: #ffffff;
           }
         }
       }

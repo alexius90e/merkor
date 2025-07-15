@@ -9,6 +9,16 @@
   font-size: 14px;
   font-weight: 900;
   color: #00b2e3;
+  -webkit-transition: color ease-out 0.2s;
+  transition: color ease-out 0.2s;
+}
+.partnery-v-1__slider .swiper-button-prev:hover, .partnery-v-1__slider .swiper-button-next:hover {
+  background-color: #01b0e3;
+  -webkit-transition: background-color ease-out 0.2s;
+  transition: background-color ease-out 0.2s;
+}
+.partnery-v-1__slider .swiper-button-prev:hover::after, .partnery-v-1__slider .swiper-button-next:hover::after {
+  color: #ffffff;
 }
 .partnery-v-1__slider-slide-item {
   display: -webkit-box;
